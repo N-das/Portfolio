@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <script>
+      document.addEventListener("scroll", function () {
+        let navbar = document.getElementById("navbar");
+        if (window.scrollY >= 600) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+    </script>
+    <nav class="nav" id="navbar">
+      <h2 id="logo">PORTFOLIO</h2>
+      <ul id="list">
+        <li><a href="#home" class="navLink active">Home</a></li>
+        <li><a href="#about" class="navLink">About</a></li>
+        <li><a href="#services" class="navLink">Services</a></li>
+        <li><a href="#skills" class="navLink">Skills</a></li>
+        <li><a href="#projects" class="navLink">Projects</a></li>
+        <li><a href="#contact" class="navLink">Contact</a></li>
+      </ul>
+
+      <div id="menu"><i class="fa-solid fa-bars" onclick="toggle()"></i></div>
+      <!-- <button onclick="toggle()">Click</button> -->
+    </nav>
+    <div class="bg-image">
+      <div class="Home" id="home">
+        <div class="content">
+          <h1>
+            <span>NITINKUMAR</span> <br />
+            <span> DAS</span>
+          </h1>
+          <p>Front-end Developer</p>
+          <div class="button">
+            <button class="resume">
+              <a
+                href="./Nitin-frontend-resume.pdf"
+                download="Nitin-frontend-resume"
+                >Resume</a
+              >
+            </button>
+            <button class="portfolio">Portfolio</button>
+          </div>
+        </div>
+      </div>
+      <div class="icon">
+        <span>
+          <a href="mailto:nitin.das.tykk@gmail.com">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </span>
+        <span>
+          <a href="https://www.linkedin.com/in/nitin-das-b42a81266/">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </span>
+        <span>
+          <a href="https://github.com/N-das">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </span>
+        <span>
+          <i class="fa-brands fa-x-twitter"></i>
+        </span>
+      </div>
+    </div>
+
+    <div class="about" id="about">
+      <div class="about-me">
+        <div>
+          <h2>ABOUT</h2>
+          <!-- <p style="font-style: italic">nitin.das.tykk@gmail.com</p> -->
+        </div>
+        <p id="para">
+          <span style="text-align: center">
+            I am Nitin Das, a passionate and skilled BCA graduate from Sahyog
+            College<br />
+            of IT and Management, Thane. I have a strong foundation in both
+            frontend and<br />
+            backend technologies, including HTML, CSS, JavaScript, React,
+            Node.js, and <br />Express. I am dedicated to building efficient,
+            scalable, and user-friendly <br />web applications.
+          </span>
+          <!-- <pre> I am Nitin Das, a passionate and skilled BCA graduate from Sahyog
+            College<br />
+            of IT and Management, Thane. I have a strong foundation in both
+            frontend and<br />
+            backend technologies, including HTML, CSS, JavaScript, React,
+            Node.js, and <br />Express. I am dedicated to building efficient,
+            scalable, and user-friendly <br />web applications.</pre> -->
+        </p>
+        <div id="personal-data">
+          <span><b>Name </b>: Nitinkumar</span>
+          <span><b>Location </b>: Mumbai</span>
+          <br />
+          <span><b>Birthday </b>: 22<sup>th</sup> sep 2001</span>
+          <span><b>Email </b>: nitin.das.tykk@gmail.com</span>
+        </div>
+      </div>
+      <img src="./images/profile.jpg" alt="" />
+    </div>
+    <div class="services-container" id="services">
+      <center><h1>SERVICES</h1></center>
+      <div class="services">
+        <div class="box">
+          <i class="fa-solid fa-code"></i>
+          <h2>Web development</h2>
+          <p>
+            Comprehensive web development services using MERN stack, Java, and
+            PHP to build dynamic, scalable applications with robust backend and
+            intuitive front-end interfaces.
+          </p>
+          <span
+            ><a href=""
+              >Know nore <i class="fa-solid fa-arrow-right i-right"></i></a
+          ></span>
+        </div>
+        <div class="box active">
+          <i class="fa-solid fa-code"></i>
+          <h2>Frontend development</h2>
+          <p>
+            Comprehensive web development services using MERN stack, Java, and
+            PHP to build dynamic, scalable applications with robust backend and
+            intuitive front-end interfaces.
+          </p>
+          <span
+            ><a href=""
+              >Know nore <i class="fa-solid fa-arrow-right i-right"></i></a
+          ></span>
+        </div>
+        <div class="box">
+          <i class="fa-solid fa-code"></i>
+          <h2>Backend development</h2>
+          <p>
+            Comprehensive web development services using MERN stack, Java, and
+            PHP to build dynamic, scalable applications with robust backend and
+            intuitive front-end interfaces.
+          </p>
+          <span
+            ><a href=""
+              >Know nore <i class="fa-solid fa-arrow-right i-right"></i></a
+          ></span>
+        </div>
+      </div>
+    </div>
+    <div class="skills" id="skills">
+      <center>
+        <h1 style="color: #3e5760">My Skills</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+          deleniti!
+        </p>
+      </center>
+      <div class="Skill-image">
+        <div class="skill">
+          <span>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/180px-HTML5_logo_and_wordmark.svg.png"
+              alt=""
+            />
+          </span>
+          <div>
+            <ul>
+              <li>HTML</li>
+              <li>80%</li>
+            </ul>
+            <!-- <progress id="file" value="70" max="100" wi></progress> -->
+            <input type="range" min="0" max="100" value="80" disabled />
+          </div>
+        </div>
+        <div class="skill">
+          <span>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/180px-CSS3_logo_and_wordmark.svg.png"
+              alt=""
+            />
+          </span>
+          <div>
+            <ul>
+              <li>CSS</li>
+              <li>80%</li>
+            </ul>
+            <input type="range" min="0" max="100" value="80" disabled />
+          </div>
+        </div>
+        <div class="skill">
+          <span>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png"
+              alt=""
+            />
+          </span>
+          <div>
+            <ul>
+              <li>JavaScript</li>
+              <li>80%</li>
+            </ul>
+            <input type="range" min="0" max="100" value="80" disabled />
+          </div>
+        </div>
+        <div class="skill">
+          <span>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/React_Logo_SVG.svg/180px-React_Logo_SVG.svg.png"
+              alt=""
+            />
+          </span>
+          <div>
+            <ul>
+              <li>React</li>
+              <li>80%</li>
+            </ul>
+            <input type="range" min="0" max="100" value="80" disabled />
+          </div>
+        </div>
+        <div class="skill">
+          <span>
+            <img
+              src="https://cdn.iconscout.com/icon/free/png-512/free-node-js-1174925.png?f=webp&w=256"
+              alt=""
+            />
+          </span>
+          <div>
+            <ul>
+              <li>Node</li>
+              <li>70%</li>
+            </ul>
+            <input type="range" min="0" max="100" value="70" disabled />
+          </div>
+        </div>
+        <div class="skill">
+          <span>
+            <img
+              src="https://cdn.iconscout.com/icon/free/png-512/free-mongodb-5-1175140.png?f=webp&w=256"
+              alt=""
+            />
+          </span>
+          <div>
+            <ul>
+              <li>mongoDB</li>
+              <li>80%</li>
+            </ul>
+            <input type="range" min="0" max="100" value="80" disabled />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="projects" id="projects">
+      <center><h2 style="padding: 20px">My projects</h2></center>
+      <div class="box">
+        <div class="card">
+          <img src="./images/img1.png" alt="" />
+          <center>
+            <p>
+              Socialmedia application using MERN stack and cloudinary
+              <a href="https://github.com/N-das/social-media-app">Sorce code</a>
+            </p>
+          </center>
+        </div>
+        <div class="card">
+          <img src="./images/img6.png" alt="" />
+          <center>
+            <p>
+              E-commerce[Book-store] application using PHP and MySQL
+              <a href="https://github.com/N-das/Bookstores">Sorce code</a>
+            </p>
+          </center>
+        </div>
+        <div class="card">
+          <img src="./images/blog-img.png" alt="" />
+          <center>
+            <p>
+              Blog static using project Using html,css & JavaScript
+              <a href="https://n-das.github.io/blog-website/">Live</a>
+            </p>
+          </center>
+        </div>
+        <div class="card">
+          <img src="./images/current-pr.png" alt="" />
+          <center>
+            <p>
+              My current working Project
+              <a href="https://n-das.github.io/Xectec-lab/">Live</a>
+            </p>
+          </center>
+        </div>
+        <div class="card">
+          <img src="./images/jobportal.png" alt="" />
+          <center>
+            <p>
+              Jobportal Application using Mern stack and cloudinary
+              <a href="https://github.com/N-das/Job-Portal">Source code</a>
+            </p>
+          </center>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="project-embed">
+      <center><embed src="https://n-das.github.io/blog-website/" ></center>
+    </div> -->
+    <div class="bg-home" id="contact">
+      <div class="container">
+        <div class="left">
+          <div class="col">
+            <h1 style="color: #11998e">CONTACT</h1>
+            <div class="contact-detail">
+              <div>
+                <h3><b>Address</b></h3>
+                <p>
+                  PrakashNagar, Khopoli, Dist-Raigad, Tal-Khalapur, Maharashtra
+                  410203
+                </p>
+              </div>
+              <div>
+                <h3><b>Email</b></h3>
+                <p>nitin.das.tykk@gmail.com</p>
+              </div>
+              <div>
+                <h3><b>Phone</b></h3>
+                <p>+91 9021748215</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="right">
+          <center>
+            <h5 style="font-size: 1.2rem">Contact Form</h5>
+          </center>
+          <div class="registration-home">
+            <form action="" class="registration-form">
+              <label for="">Full Name</label>
+              <input type="text" />
+              <label for="">Email</label>
+              <input type="email" />
+              <label for="">Message</label>
+              <textarea
+                name=""
+                id=""
+                style="
+                  background: transparent;
+                  color: white;
+                  border: none;
+                  border-bottom: 1px solid white;
+                "
+              ></textarea>
+              <button id="send-mail">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="contact">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <h1>CONTACT</h1>
+            <div class="contact-detail">
+              <div>
+                <p><b>Address</b></p>
+                <p>
+                  PrakashNagar, Khopoli, Dist-Raigad, Tal-Khalapur, Maharashtra
+                  410203
+                </p>
+              </div>
+              <div>
+                <p><b>Email</b></p>
+                <p>nitin.das.tykk@gmail.com</p>
+              </div>
+              <div>
+                <p><b>Phone</b></p>
+                <p>+91 9021748215</p>
+              </div>
+            </div>
+          </div>
+          <div class="col right">
+            <h1>CONTACT FORM</h1>
+            <div class="form__group field">
+              <div class="form__group field">
+                <input
+                  type="input"
+                  class="form__field"
+                  placeholder="Name"
+                  name="name"
+                  id="name"
+                  required
+                />
+                <label for="name" class="form__label">Name</label>
+              </div>
+              <br />
+              <div class="form__group field">
+                <input
+                  type="input"
+                  class="form__field"
+                  placeholder="Name"
+                  name="name"
+                  id="name"
+                  required
+                />
+                <label for="name" class="form__label">Name</label>
+              </div>
+              <br />
+              <div class="form__group field">
+                <input
+                  type="input"
+                  class="form__field"
+                  placeholder="Name"
+                  name="name"
+                  id="name"
+                  required
+                />
+                <label for="name" class="form__label">Name</label>
+              </div>
+              <br />
+              <div class="form__group field">
+                <input
+                  type="input"
+                  class="form__field"
+                  placeholder="Name"
+                  name="name"
+                  id="name"
+                  required
+                />
+                <label for="name" class="form__label">Name</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <script>
+      let menuIcon = document.querySelector("#menu i");
+      let list = document.getElementById("list");
+      let logo = document.getElementById("logo");
+
+      function toggle() {
+        console.log("btn clicked");
+        if (list.style.display === "none" || list.style.display === "") {
+          list.style.display = "block";
+          logo.style.visibility = "hidden";
+          menuIcon.classList.remove("fa-bars");
+          menuIcon.classList.add("fa-xmark");
+        } else {
+          list.style.display = "none";
+          logo.style.visibility = "visible";
+          menuIcon.classList.remove("fa-xmark");
+          menuIcon.classList.add("fa-bars");
+        }
+      }
+
+      function handleNavLinkClick(event) {
+        var navLinks = document.querySelectorAll(".navLink");
+        navLinks.forEach(function (link) {
+          link.classList.remove("active");
+        });
+        event.target.classList.add("active");
+      }
+      var navLinks = document.querySelectorAll(".navLink");
+      navLinks.forEach(function (link) {
+        link.addEventListener("click", handleNavLinkClick);
+      });
+      document.getElementById("home").classList.add("active");
+    </script>
+    <!-- <i class="fa-solid fa-xmark"></i> -->
+  </body>
+</html>

@@ -751,7 +751,7 @@ span:nth-child(1) {
   background:var(--bg-color);
   background-position: center center;
   position: relative;
-  height: 100vh;
+  height: fit-content;
   display: flex;
   background-repeat: no-repeat;
   background-size: cover;
